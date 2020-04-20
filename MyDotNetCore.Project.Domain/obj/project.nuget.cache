@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "bbNy8dsr9GvP6gCxtwmjRCCnHpcQkI/9BcBzIIuivoGH4/UPSf6FhsY+mXPNOV9h4LocwHdFHoucQj5KOulUGQ==",
+  "success": true,
+  "projectFilePath": "F:\\MyDotNetCore\\MyDotNetCore.Project.Domain\\MyDotNetCore.Project.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Auser\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Auser\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

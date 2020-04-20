@@ -1,0 +1,6 @@
+F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Abstractions\obj\Debug\netstandard2.0\AspectCore.Abstractions.csprojAssemblyReference.cache
+F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Abstractions\obj\Debug\netstandard2.0\AspectCore.Abstractions.csproj.CoreCompileInputs.cache
+F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Abstractions\obj\Debug\netstandard2.0\AspectCore.Abstractions.AssemblyInfoInputs.cache
+F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Abstractions\obj\Debug\netstandard2.0\AspectCore.Abstractions.AssemblyInfo.cs
+F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Abstractions\bin\Debug\netstandard2.0\AspectCore.Abstractions.deps.json
+F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Abstractions\bin\Debug\netstandard2.0\AspectCore.Abstractions.dll

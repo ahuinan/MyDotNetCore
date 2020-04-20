@@ -1,0 +1,9 @@
+F:\MyDotNetCore\MyDotNetCore.Project.Domain\bin\Debug\netstandard2.0\MyDotNetCore.Project.Domain.deps.json
+F:\MyDotNetCore\MyDotNetCore.Project.Domain\bin\Debug\netstandard2.0\MyDotNetCore.Project.Domain.dll
+F:\MyDotNetCore\MyDotNetCore.Project.Domain\bin\Debug\netstandard2.0\MyDotNetCore.Project.Domain.pdb
+F:\MyDotNetCore\MyDotNetCore.Project.Domain\obj\Debug\netstandard2.0\MyDotNetCore.Project.Domain.csproj.CoreCompileInputs.cache
+F:\MyDotNetCore\MyDotNetCore.Project.Domain\obj\Debug\netstandard2.0\MyDotNetCore.Project.Domain.AssemblyInfoInputs.cache
+F:\MyDotNetCore\MyDotNetCore.Project.Domain\obj\Debug\netstandard2.0\MyDotNetCore.Project.Domain.AssemblyInfo.cs
+F:\MyDotNetCore\MyDotNetCore.Project.Domain\obj\Debug\netstandard2.0\MyDotNetCore.Project.Domain.dll
+F:\MyDotNetCore\MyDotNetCore.Project.Domain\obj\Debug\netstandard2.0\MyDotNetCore.Project.Domain.pdb
+F:\MyDotNetCore\MyDotNetCore.Project.Domain\obj\Debug\netstandard2.0\MyDotNetCore.Project.Domain.csprojAssemblyReference.cache

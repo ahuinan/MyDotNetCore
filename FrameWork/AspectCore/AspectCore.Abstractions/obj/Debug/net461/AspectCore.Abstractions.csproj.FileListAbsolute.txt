@@ -1,0 +1,4 @@
+F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Abstractions\obj\Debug\net461\AspectCore.Abstractions.csprojAssemblyReference.cache
+F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Abstractions\obj\Debug\net461\AspectCore.Abstractions.csproj.CoreCompileInputs.cache
+F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Abstractions\obj\Debug\net461\AspectCore.Abstractions.AssemblyInfoInputs.cache
+F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Abstractions\obj\Debug\net461\AspectCore.Abstractions.AssemblyInfo.cs

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "P2vdM5uSkW4S4favlCGEm5i/8ig8CMUwgEExGNU5D1LXAc3bdhuS+51HhsCMqcyfhNrRqA/wpxowKw4G0xxJtQ==",
+  "success": true,
+  "projectFilePath": "F:\\MyDotNetCore\\FrameWork\\AspectCore\\AspectCore.Extensions.AspectScope\\AspectCore.Extensions.AspectScope.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Auser\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}

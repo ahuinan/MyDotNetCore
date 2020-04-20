@@ -1,0 +1,12 @@
+F:\MyDotNetCore\MyDotNetCore.Project.Infrastructure\bin\Debug\netstandard2.0\MyDotNetCore.Project.Infrastructure.deps.json
+F:\MyDotNetCore\MyDotNetCore.Project.Infrastructure\bin\Debug\netstandard2.0\MyDotNetCore.Project.Infrastructure.dll
+F:\MyDotNetCore\MyDotNetCore.Project.Infrastructure\bin\Debug\netstandard2.0\MyDotNetCore.Project.Infrastructure.pdb
+F:\MyDotNetCore\MyDotNetCore.Project.Infrastructure\obj\Debug\netstandard2.0\MyDotNetCore.Project.Infrastructure.AssemblyInfoInputs.cache
+F:\MyDotNetCore\MyDotNetCore.Project.Infrastructure\obj\Debug\netstandard2.0\MyDotNetCore.Project.Infrastructure.AssemblyInfo.cs
+F:\MyDotNetCore\MyDotNetCore.Project.Infrastructure\obj\Debug\netstandard2.0\MyDotNetCore.Project.Infrastructure.dll
+F:\MyDotNetCore\MyDotNetCore.Project.Infrastructure\obj\Debug\netstandard2.0\MyDotNetCore.Project.Infrastructure.pdb
+F:\MyDotNetCore\MyDotNetCore.Project.Infrastructure\obj\Debug\netstandard2.0\MyDotNetCore.Project.Infrastructure.csproj.CoreCompileInputs.cache
+F:\MyDotNetCore\MyDotNetCore.Project.Infrastructure\obj\Debug\netstandard2.0\MyDotNetCore.Project.Infrastructure.csprojAssemblyReference.cache
+F:\MyDotNetCore\MyDotNetCore.Project.Infrastructure\bin\Debug\netstandard2.0\SqlSugar.dll
+F:\MyDotNetCore\MyDotNetCore.Project.Infrastructure\bin\Debug\netstandard2.0\SqlSugar.pdb
+F:\MyDotNetCore\MyDotNetCore.Project.Infrastructure\obj\Debug\netstandard2.0\MyDotNetCore.Project.Infrastructure.csproj.CopyComplete

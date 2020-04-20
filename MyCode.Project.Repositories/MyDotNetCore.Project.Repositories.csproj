@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\FrameWork\SqlSugar\SqlSugar.csproj" />
+    <ProjectReference Include="..\MyDotNetCore.Project.Domain\MyDotNetCore.Project.Domain.csproj" />
+    <ProjectReference Include="..\MyDotNetCore.Project.Infrastructure\MyDotNetCore.Project.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

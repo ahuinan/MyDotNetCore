@@ -1,0 +1,9 @@
+F:\MyDotNetCore\MyDotNetCore.Project.OutSideService\bin\Debug\netstandard2.0\MyDotNetCore.Project.OutSideService.deps.json
+F:\MyDotNetCore\MyDotNetCore.Project.OutSideService\bin\Debug\netstandard2.0\MyDotNetCore.Project.OutSideService.dll
+F:\MyDotNetCore\MyDotNetCore.Project.OutSideService\bin\Debug\netstandard2.0\MyDotNetCore.Project.OutSideService.pdb
+F:\MyDotNetCore\MyDotNetCore.Project.OutSideService\obj\Debug\netstandard2.0\MyDotNetCore.Project.OutSideService.csproj.CoreCompileInputs.cache
+F:\MyDotNetCore\MyDotNetCore.Project.OutSideService\obj\Debug\netstandard2.0\MyDotNetCore.Project.OutSideService.AssemblyInfoInputs.cache
+F:\MyDotNetCore\MyDotNetCore.Project.OutSideService\obj\Debug\netstandard2.0\MyDotNetCore.Project.OutSideService.AssemblyInfo.cs
+F:\MyDotNetCore\MyDotNetCore.Project.OutSideService\obj\Debug\netstandard2.0\MyDotNetCore.Project.OutSideService.dll
+F:\MyDotNetCore\MyDotNetCore.Project.OutSideService\obj\Debug\netstandard2.0\MyDotNetCore.Project.OutSideService.pdb
+F:\MyDotNetCore\MyDotNetCore.Project.OutSideService\obj\Debug\netstandard2.0\MyDotNetCore.Project.OutSideService.csprojAssemblyReference.cache

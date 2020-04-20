@@ -1,0 +1,12 @@
+F:\MyDotNetCore\MyDotNetCore.Project.GenerateCode\bin\Debug\netcoreapp3.1\MyDotNetCore.Project.GenerateCode.exe
+F:\MyDotNetCore\MyDotNetCore.Project.GenerateCode\bin\Debug\netcoreapp3.1\MyDotNetCore.Project.GenerateCode.deps.json
+F:\MyDotNetCore\MyDotNetCore.Project.GenerateCode\bin\Debug\netcoreapp3.1\MyDotNetCore.Project.GenerateCode.runtimeconfig.json
+F:\MyDotNetCore\MyDotNetCore.Project.GenerateCode\bin\Debug\netcoreapp3.1\MyDotNetCore.Project.GenerateCode.runtimeconfig.dev.json
+F:\MyDotNetCore\MyDotNetCore.Project.GenerateCode\bin\Debug\netcoreapp3.1\MyDotNetCore.Project.GenerateCode.dll
+F:\MyDotNetCore\MyDotNetCore.Project.GenerateCode\bin\Debug\netcoreapp3.1\MyDotNetCore.Project.GenerateCode.pdb
+F:\MyDotNetCore\MyDotNetCore.Project.GenerateCode\obj\Debug\netcoreapp3.1\MyDotNetCore.Project.GenerateCode.csproj.CoreCompileInputs.cache
+F:\MyDotNetCore\MyDotNetCore.Project.GenerateCode\obj\Debug\netcoreapp3.1\MyDotNetCore.Project.GenerateCode.AssemblyInfoInputs.cache
+F:\MyDotNetCore\MyDotNetCore.Project.GenerateCode\obj\Debug\netcoreapp3.1\MyDotNetCore.Project.GenerateCode.AssemblyInfo.cs
+F:\MyDotNetCore\MyDotNetCore.Project.GenerateCode\obj\Debug\netcoreapp3.1\MyDotNetCore.Project.GenerateCode.dll
+F:\MyDotNetCore\MyDotNetCore.Project.GenerateCode\obj\Debug\netcoreapp3.1\MyDotNetCore.Project.GenerateCode.pdb
+F:\MyDotNetCore\MyDotNetCore.Project.GenerateCode\obj\Debug\netcoreapp3.1\MyDotNetCore.Project.GenerateCode.genruntimeconfig.cache
