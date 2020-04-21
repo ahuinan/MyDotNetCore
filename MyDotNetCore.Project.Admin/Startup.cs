@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using MyDotNetCore.Project.Infrastructure.Common;
+using MyDotNetCore.Project.Domain.Common;
 
 namespace MyDotNetCore.Project.Admin
 {
@@ -54,7 +54,9 @@ namespace MyDotNetCore.Project.Admin
             });
 
             //初始化系统配置
-            SysConfig.Init(configuration);
+            var sysConfig = new SysConfig();
+
+            Configuration.GetSection("SysConfig").Bind(sysConfig);
         }
     }
 }

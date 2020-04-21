@@ -11,9 +11,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FrameWork\SqlSugar\SqlSugar.csproj" />
+    <ProjectReference Include="..\MyDotNetCore.Project.Domain\MyDotNetCore.Project.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Common\" />
     <Folder Include="Search\" />
   </ItemGroup>
 
