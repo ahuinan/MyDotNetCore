@@ -68,9 +68,7 @@ namespace MyDotNetCore.Project.Admin
             });
 
             //初始化系统配置
-            var sysConfig = new SysConfig();
-
-            Configuration.GetSection("SysConfig").Bind(sysConfig);
+            Configuration.GetSection("SysConfig").Bind(new SysConfig());
 
             //初始化IOC组件-使用AspectCore.Injector
 
