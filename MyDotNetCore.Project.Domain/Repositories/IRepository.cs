@@ -128,6 +128,5 @@ namespace MyDotNetCore.Project.Domain.Repositories
         ISugarQueryable<TEntity> Queryable();
 
 
-
     }
 }
