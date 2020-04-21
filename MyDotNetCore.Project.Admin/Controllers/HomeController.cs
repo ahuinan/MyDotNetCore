@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MyDotNetCore.Project.Admin.Models;
+using MyDotNetCore.Project.Infrastructure.Helper;
 
 namespace MyDotNetCore.Project.Admin.Controllers
 {
@@ -20,6 +21,8 @@ namespace MyDotNetCore.Project.Admin.Controllers
 
         public IActionResult Index()
         {
+            LogHelper.Info("Info Testing");
+            LogHelper.Error("Error Testing");
             return View();
         }
 

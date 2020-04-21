@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using SqlSugar;
 using System.Text;
-using MyDotNetCore.Project.Infrastructure.Common;
+using MyDotNetCore.Project.Domain.Common;
 
 namespace MyDotNetCore.Project.Repositories.Common
 {

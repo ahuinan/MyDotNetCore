@@ -1,13 +1,16 @@
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.Design;
 using System.Linq;
 using System.Threading.Tasks;
+using AspectCore.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MyDotNetCore.Project.Domain.Common;
+
 
 namespace MyDotNetCore.Project.Admin
 {
@@ -27,6 +30,17 @@ namespace MyDotNetCore.Project.Admin
         {
            
             services.AddControllersWithViews();
+
+            //将IServiceCollection的服务添加到ServiceContainer容器中
+            //var serviceProvider = services.BuildServiceContextProvider();
+
+            //  var serviceContainer = new ServiceContainer();
+
+            //services.AddScoped();
+
+
+
+            //return container.Build();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -57,6 +71,13 @@ namespace MyDotNetCore.Project.Admin
             var sysConfig = new SysConfig();
 
             Configuration.GetSection("SysConfig").Bind(sysConfig);
+
+            //初始化IOC组件-使用AspectCore.Injector
+
+
+            //初始化日志组件
+
+
         }
     }
 }

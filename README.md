@@ -2,7 +2,7 @@
 1. 部署环境 ：Window Server 或 Linux
 2. 开发平台 ：VS2019
 3. ORM ：SqlSugar
-4. Ioc框架 ：--
+4. Ioc框架 ：AspectCore.Injector
 5. Aop框架 ：AspectCore
 6. Json框架 ：Newtonsoft.Json
 7. 日志框架 : log4net
