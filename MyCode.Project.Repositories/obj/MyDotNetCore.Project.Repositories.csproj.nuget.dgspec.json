@@ -187,7 +187,11 @@
         },
         "frameworks": {
           "netstandard2.0": {
-            "projectReferences": {}
+            "projectReferences": {
+              "F:\\MyDotNetCore\\FrameWork\\SqlSugar\\SqlSugar.csproj": {
+                "projectPath": "F:\\MyDotNetCore\\FrameWork\\SqlSugar\\SqlSugar.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

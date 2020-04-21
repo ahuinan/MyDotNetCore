@@ -6,3 +6,4 @@ F:\MyDotNetCore\FrameWork\SqlSugar\obj\Debug\netstandard2.0\SqlSugar.AssemblyInf
 F:\MyDotNetCore\FrameWork\SqlSugar\obj\Debug\netstandard2.0\SqlSugar.AssemblyInfo.cs
 F:\MyDotNetCore\FrameWork\SqlSugar\obj\Debug\netstandard2.0\SqlSugar.dll
 F:\MyDotNetCore\FrameWork\SqlSugar\obj\Debug\netstandard2.0\SqlSugar.pdb
+F:\MyDotNetCore\FrameWork\SqlSugar\obj\Debug\netstandard2.0\SqlSugar.csprojAssemblyReference.cache

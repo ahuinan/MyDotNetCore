@@ -7,3 +7,6 @@ F:\MyDotNetCore\MyDotNetCore.Project.Domain\obj\Debug\netstandard2.0\MyDotNetCor
 F:\MyDotNetCore\MyDotNetCore.Project.Domain\obj\Debug\netstandard2.0\MyDotNetCore.Project.Domain.dll
 F:\MyDotNetCore\MyDotNetCore.Project.Domain\obj\Debug\netstandard2.0\MyDotNetCore.Project.Domain.pdb
 F:\MyDotNetCore\MyDotNetCore.Project.Domain\obj\Debug\netstandard2.0\MyDotNetCore.Project.Domain.csprojAssemblyReference.cache
+F:\MyDotNetCore\MyDotNetCore.Project.Domain\bin\Debug\netstandard2.0\SqlSugar.dll
+F:\MyDotNetCore\MyDotNetCore.Project.Domain\bin\Debug\netstandard2.0\SqlSugar.pdb
+F:\MyDotNetCore\MyDotNetCore.Project.Domain\obj\Debug\netstandard2.0\MyDotNetCore.Project.Domain.csproj.CopyComplete

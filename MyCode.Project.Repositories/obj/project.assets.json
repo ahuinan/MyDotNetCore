@@ -1086,6 +1086,9 @@
       "MyDotNetCore.Project.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "SqlSugar": "5.0.0.13"
+        },
         "compile": {
           "bin/placeholder/MyDotNetCore.Project.Domain.dll": {}
         },

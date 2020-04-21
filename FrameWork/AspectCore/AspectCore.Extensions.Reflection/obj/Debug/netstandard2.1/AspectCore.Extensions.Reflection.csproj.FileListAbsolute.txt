@@ -6,3 +6,4 @@ F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Extensions.Reflection\bin\Debug\
 F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Extensions.Reflection\bin\Debug\netstandard2.1\AspectCore.Extensions.Reflection.pdb
 F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Extensions.Reflection\obj\Debug\netstandard2.1\AspectCore.Extensions.Reflection.dll
 F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Extensions.Reflection\obj\Debug\netstandard2.1\AspectCore.Extensions.Reflection.pdb
+F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Extensions.Reflection\obj\Debug\netstandard2.1\AspectCore.Extensions.Reflection.csprojAssemblyReference.cache

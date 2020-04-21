@@ -6,3 +6,4 @@ F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Abstractions\bin\Debug\netstanda
 F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Abstractions\bin\Debug\netstandard2.1\AspectCore.Abstractions.pdb
 F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Abstractions\obj\Debug\netstandard2.1\AspectCore.Abstractions.dll
 F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Abstractions\obj\Debug\netstandard2.1\AspectCore.Abstractions.pdb
+F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Abstractions\obj\Debug\netstandard2.1\AspectCore.Abstractions.csprojAssemblyReference.cache
