@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrameWork", "FrameWork", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Document", "Document", "{F824DD0A-F660-4E3F-8D06-F2EA534A31E3}"
 	ProjectSection(SolutionItems) = preProject
-		Document\README.md = Document\README.md
+		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyDotNetCore.Project.Repositories", "MyCode.Project.Repositories\MyDotNetCore.Project.Repositories.csproj", "{FD40D262-CCC8-4358-8D9C-B67922A57BB2}"
