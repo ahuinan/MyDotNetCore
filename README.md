@@ -1,9 +1,9 @@
 # 描述
-1. 部署环境 ：Window Server
-2. 开发平台 ：VS2015或VS2017
+1. 部署环境 ：Window Server 或 Linux
+2. 开发平台 ：VS2019
 3. ORM ：SqlSugar
-4. Ioc框架 ：Unity
-5. Aop框架 ：Unity
+4. Ioc框架 ：--
+5. Aop框架 ：AspectCore
 6. Json框架 ：Newtonsoft.Json
 7. 日志框架 : log4net
 8. 缓存 ：内存或Redis
@@ -319,7 +319,6 @@ return this.SelectListPage<LoginListResp>(strSql, where, request.Page, request.P
 //这里只需要一个字段
  var loginRole = _sysLoginRoleRepository.Queryable().Where(p => p.LoginID == loginId).Select(p => new { p.RoleID }).First();
 ```
-
 
 
 

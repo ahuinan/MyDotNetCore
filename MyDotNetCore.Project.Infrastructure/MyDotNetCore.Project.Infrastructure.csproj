@@ -13,4 +13,8 @@
     <ProjectReference Include="..\FrameWork\SqlSugar\SqlSugar.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Search\" />
+  </ItemGroup>
+
 </Project>
