@@ -1,9 +1,0 @@
-F:\MyDotNetCore\FrameWork\SqlSugar\bin\Debug\netstandard2.0\SqlSugar.deps.json
-F:\MyDotNetCore\FrameWork\SqlSugar\bin\Debug\netstandard2.0\SqlSugar.dll
-F:\MyDotNetCore\FrameWork\SqlSugar\bin\Debug\netstandard2.0\SqlSugar.pdb
-F:\MyDotNetCore\FrameWork\SqlSugar\obj\Debug\netstandard2.0\SqlSugar.csproj.CoreCompileInputs.cache
-F:\MyDotNetCore\FrameWork\SqlSugar\obj\Debug\netstandard2.0\SqlSugar.AssemblyInfoInputs.cache
-F:\MyDotNetCore\FrameWork\SqlSugar\obj\Debug\netstandard2.0\SqlSugar.AssemblyInfo.cs
-F:\MyDotNetCore\FrameWork\SqlSugar\obj\Debug\netstandard2.0\SqlSugar.dll
-F:\MyDotNetCore\FrameWork\SqlSugar\obj\Debug\netstandard2.0\SqlSugar.pdb
-F:\MyDotNetCore\FrameWork\SqlSugar\obj\Debug\netstandard2.0\SqlSugar.csprojAssemblyReference.cache

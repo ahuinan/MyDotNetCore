@@ -1,9 +1,0 @@
-F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Extensions.Reflection\obj\Debug\netstandard2.1\AspectCore.Extensions.Reflection.csproj.CoreCompileInputs.cache
-F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Extensions.Reflection\obj\Debug\netstandard2.1\AspectCore.Extensions.Reflection.AssemblyInfoInputs.cache
-F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Extensions.Reflection\obj\Debug\netstandard2.1\AspectCore.Extensions.Reflection.AssemblyInfo.cs
-F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Extensions.Reflection\bin\Debug\netstandard2.1\AspectCore.Extensions.Reflection.deps.json
-F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Extensions.Reflection\bin\Debug\netstandard2.1\AspectCore.Extensions.Reflection.dll
-F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Extensions.Reflection\bin\Debug\netstandard2.1\AspectCore.Extensions.Reflection.pdb
-F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Extensions.Reflection\obj\Debug\netstandard2.1\AspectCore.Extensions.Reflection.dll
-F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Extensions.Reflection\obj\Debug\netstandard2.1\AspectCore.Extensions.Reflection.pdb
-F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Extensions.Reflection\obj\Debug\netstandard2.1\AspectCore.Extensions.Reflection.csprojAssemblyReference.cache

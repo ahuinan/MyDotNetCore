@@ -1,4 +1,0 @@
-F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Extensions.Reflection\obj\Debug\net461\AspectCore.Extensions.Reflection.csprojAssemblyReference.cache
-F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Extensions.Reflection\obj\Debug\net461\AspectCore.Extensions.Reflection.csproj.CoreCompileInputs.cache
-F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Extensions.Reflection\obj\Debug\net461\AspectCore.Extensions.Reflection.AssemblyInfoInputs.cache
-F:\MyDotNetCore\FrameWork\AspectCore\AspectCore.Extensions.Reflection\obj\Debug\net461\AspectCore.Extensions.Reflection.AssemblyInfo.cs

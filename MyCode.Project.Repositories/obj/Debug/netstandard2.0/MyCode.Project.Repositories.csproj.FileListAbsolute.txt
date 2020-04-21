@@ -1,8 +1,0 @@
-F:\MyDotNetCore\MyCode.Project.Repositories\bin\Debug\netstandard2.0\MyCode.Project.Repositories.deps.json
-F:\MyDotNetCore\MyCode.Project.Repositories\bin\Debug\netstandard2.0\MyCode.Project.Repositories.dll
-F:\MyDotNetCore\MyCode.Project.Repositories\bin\Debug\netstandard2.0\MyCode.Project.Repositories.pdb
-F:\MyDotNetCore\MyCode.Project.Repositories\obj\Debug\netstandard2.0\MyCode.Project.Repositories.csproj.CoreCompileInputs.cache
-F:\MyDotNetCore\MyCode.Project.Repositories\obj\Debug\netstandard2.0\MyCode.Project.Repositories.AssemblyInfoInputs.cache
-F:\MyDotNetCore\MyCode.Project.Repositories\obj\Debug\netstandard2.0\MyCode.Project.Repositories.AssemblyInfo.cs
-F:\MyDotNetCore\MyCode.Project.Repositories\obj\Debug\netstandard2.0\MyCode.Project.Repositories.dll
-F:\MyDotNetCore\MyCode.Project.Repositories\obj\Debug\netstandard2.0\MyCode.Project.Repositories.pdb
