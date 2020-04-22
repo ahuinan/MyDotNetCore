@@ -1,4 +1,7 @@
-﻿using MyDotNetCore.Project.Domain.Repositories;
+﻿using MyDotNetCore.Project.Domain.Common;
+using MyDotNetCore.Project.Domain.Repositories;
+using MyDotNetCore.Project.Infrastructure.Extensions;
+using MyDotNetCore.Project.Infrastructure.Helper;
 using Newtonsoft.Json;
 using SqlSugar;
 using System;
@@ -19,19 +22,21 @@ namespace MyDotNetCore.Project.Repositories.Common
 
             this._context.Aop.OnLogExecuted = (sql, pars) =>
             {
-                //this._context.Ado.SqlExecutionTime
+                var executeSecond = this._context.Ado.SqlExecutionTime.TotalSeconds;
 
-                //if (SystemConfig.IfOutputSql)
-                //{
-                //    LogHelper.Info($"执行时间：{executeSecond}{Environment.NewLine}Sql:{sql}{Environment.NewLine}参数：{JsonConvert.SerializeObject(pars)}");
-                //}
-                //else
-                //{
-                //    if (executeSecond > 1000)
-                //    {
-                //        LogHelper.Info($"执行超过1秒：{executeSecond}{Environment.NewLine}Sql:{sql}{Environment.NewLine}参数：{JsonConvert.SerializeObject(pars)}");
-                //    }
-                //}
+                //是否输出Sql
+                if (SysConfig.IfOutputSql)
+                {
+                    LogHelper.Info($"执行时间：{executeSecond}{Environment.NewLine}Sql:{sql}{Environment.NewLine}参数：{pars.ToJson()}");
+                }
+                else
+                {
+                    //只输出超过1秒的sql
+                    if (executeSecond > 1)
+                    {
+                        LogHelper.Info($"执行超过1秒：{executeSecond}{Environment.NewLine}Sql:{sql}{Environment.NewLine}参数：{JsonConvert.SerializeObject(pars)}");
+                    }
+                }
 
 
             };

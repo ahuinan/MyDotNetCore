@@ -17,5 +17,10 @@ namespace MyDotNetCore.Project.Domain.Common
         /// </summary>
         public static string ConnectionMasterStr { get; set; }
 
+        /// <summary>
+        /// 是否输出SQL
+        /// </summary>
+        public static bool IfOutputSql { get; set; }
+
     }
 }
