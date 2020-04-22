@@ -12,6 +12,7 @@ using MyDotNetCore.Project.Domain.Common;
 using AspectCore.Extensions.DependencyInjection;
 using AspectCore.Configuration;
 using MyDotNetCore.Project.Infrastructure.Aop;
+using MyDotNetCore.Project.Repositories.Common;
 
 namespace MyDotNetCore.Project.Admin
 {
@@ -29,8 +30,10 @@ namespace MyDotNetCore.Project.Admin
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-           
             services.AddControllersWithViews();
+
+            //注入数据库连接对象
+            services.AddScoped<MyDotNetCoreSqlSugarClient>();
 
             //Aop拦截处理
             services.ConfigureDynamicProxy(config => {
