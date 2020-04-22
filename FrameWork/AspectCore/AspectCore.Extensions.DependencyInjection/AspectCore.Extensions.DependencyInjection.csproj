@@ -9,11 +9,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AspectCore.Core\AspectCore.Core.csproj" />
+    <Folder Include="Properties\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Properties\" />
+    <ProjectReference Include="..\AspectCore.Core\AspectCore.Core.csproj" />
   </ItemGroup>
 
 </Project>

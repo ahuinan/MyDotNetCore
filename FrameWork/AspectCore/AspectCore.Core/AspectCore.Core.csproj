@@ -1,24 +1,40 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
-  </PropertyGroup>
-
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <Description>The implementation of the AspectCore framework.</Description>
+    <AssemblyTitle>AspectCore.Core</AssemblyTitle> 
+    <TargetFrameworks>netstandard2.1</TargetFrameworks>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <AssemblyName>AspectCore.Core</AssemblyName>
+    <PackageId>AspectCore.Core</PackageId>
+    <PackageTags>DynamicProxy;Aop;Aspect;AspectCore;Intercepter</PackageTags>
+    <PackageReleaseNotes>The implementation of the AspectCore framework.</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.1|AnyCPU'">
+    <DefineConstants>TRACE;DEBUG;NETSTANDARD1_6</DefineConstants>
+    <LangVersion>default</LangVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AspectCore.Abstractions\AspectCore.Abstractions.csproj" />
+    <Compile Remove="DynamicProxy\Enhances\**" />
+    <EmbeddedResource Remove="DynamicProxy\Enhances\**" />
+    <None Remove="DynamicProxy\Enhances\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CSharp" Version="4.4.0" />
+    <PackageReference Include="System.Threading.Tasks.Extensions" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup Condition=" '$(TargetFramework)' == 'netstandard1.6' ">
+    <PackageReference Include="System.Reflection.Emit" Version="4.3.0" />
+    <PackageReference Include="System.Reflection.Emit.Lightweight" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\AspectCore.Extensions.Reflection\AspectCore.Extensions.Reflection.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Properties\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />
+    <ProjectReference Include="..\AspectCore.Abstractions\AspectCore.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>

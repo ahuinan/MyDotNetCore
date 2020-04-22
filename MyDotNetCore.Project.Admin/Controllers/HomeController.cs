@@ -21,6 +21,8 @@ namespace MyDotNetCore.Project.Admin.Controllers
 
         public IActionResult Index()
         {
+            int j = 0;
+            int i = 1 / j;
             LogHelper.Info("Info Testing");
             LogHelper.Error("Error Testing");
             return View();

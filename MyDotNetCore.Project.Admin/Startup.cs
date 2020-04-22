@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.Linq;
 using System.Threading.Tasks;
-using AspectCore.DependencyInjection;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using MyDotNetCore.Project.Domain.Common;
-
+using AspectCore.Extensions.DependencyInjection;
+using AspectCore.Configuration;
+using MyDotNetCore.Project.Infrastructure.Aop;
 
 namespace MyDotNetCore.Project.Admin
 {
@@ -31,16 +32,11 @@ namespace MyDotNetCore.Project.Admin
            
             services.AddControllersWithViews();
 
-            //将IServiceCollection的服务添加到ServiceContainer容器中
-            //var serviceProvider = services.BuildServiceContextProvider();
+            //Aop拦截处理
+            services.ConfigureDynamicProxy(config => {
 
-            //  var serviceContainer = new ServiceContainer();
-
-            //services.AddScoped();
-
-
-
-            //return container.Build();
+                config.Interceptors.AddTyped<ErrorLogHandler>(Predicates.ForNameSpace("MyDotNetCore.*"));
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -69,11 +65,6 @@ namespace MyDotNetCore.Project.Admin
 
             //初始化系统配置
             Configuration.GetSection("SysConfig").Bind(new SysConfig());
-
-            //初始化IOC组件-使用AspectCore.Injector
-
-
-            //初始化日志组件
 
 
         }

@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FrameWork\AspectCore\AspectCore.Abstractions\AspectCore.Abstractions.csproj" />
     <ProjectReference Include="..\FrameWork\SqlSugar\SqlSugar.csproj" />
     <ProjectReference Include="..\MyDotNetCore.Project.Domain\MyDotNetCore.Project.Domain.csproj" />
   </ItemGroup>
