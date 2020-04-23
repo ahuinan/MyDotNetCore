@@ -27,7 +27,7 @@ using MyDotNetCore.Project.Domain.Model;
 using MyDotNetCore.Project.Infrastructure.Common;
 using MyDotNetCore.Project.Domain.Message;
 
-namespace MyCode.Project.Domain.Repositories
+namespace MyDotNetCore.Project.Domain.Repositories
 {{
 	public interface I{GetHumpTableName(tablename)}Repository : IRepository<{tablename}>
 	{{

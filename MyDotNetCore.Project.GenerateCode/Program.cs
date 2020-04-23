@@ -1,4 +1,7 @@
-﻿using MyDotNetCore.Project.GenerateCode.Template;
+﻿using Microsoft.Extensions.Configuration;
+using MyDotNetCore.Project.Domain.Common;
+using MyDotNetCore.Project.GenerateCode.Template;
+using MyDotNetCore.Project.Infrastructure.Common;
 using MyDotNetCore.Project.Infrastructure.Helper;
 using MyDotNetCore.Project.Repositories.Common;
 using System;
@@ -10,6 +13,19 @@ namespace MyDotNetCore.Project.GenerateCode
     {
         static void Main(string[] args)
         {
+           // IServiceCollection services = new ServiceCollection();
+
+            //var configuration = new ConfigurationBuilder()
+
+
+            Config.Get("");
+            //configuration.
+            //注入
+            //services.AddScoped<MyDotNetCoreSqlSugarClient>();
+
+            //初始化系统配置
+            //configuration.GetSection("SysConfig").Bind(new SysConfig());
+
             using (var db = new MyDotNetCoreSqlSugarClient())
             {
                 var tables = db.DbMaintenance.GetTableInfoList();

@@ -12,7 +12,7 @@ namespace MyDotNetCore.Project.Infrastructure.Helper
         {
             // return AppDomain.CurrentDomain.SetupInformation.ApplicationBase
 
-            return Path.GetFullPath(@"../../../");
+            return Path.GetFullPath(@"../../../../");
         }
         #endregion
 
