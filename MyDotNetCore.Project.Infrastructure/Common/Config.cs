@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MyDotNetCore.Project.Domain.Common;
+using MyDotNetCore.Project.Infrastructure.Repository;
+using SqlSugar;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -8,10 +10,10 @@ using System.Text;
 
 namespace MyDotNetCore.Project.Infrastructure.Common
 {
-    public static class Config
+    public static class MyDotNetCoreFrameWork
     {
         private static IConfiguration configuration;
-        static Config()
+        public static void Init(IServiceCollection service)
         {
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
@@ -21,6 +23,8 @@ namespace MyDotNetCore.Project.Infrastructure.Common
             //初始化系统配置
             configuration.GetSection("SysConfig").Bind(new SysConfig());
 
+            //注入数据对象
+            service.AddScoped<ISqlSugarClient,MyDotNetCoreSqlSugarClient>();
 
         }
 

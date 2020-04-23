@@ -28,7 +28,7 @@ namespace MyDotNetCore.Project.Repositories
 {{
     public class {GetHumpTableName(tablename)}Repository: Repository<{tablename}>, I{GetHumpTableName(tablename)}Repository
     {{
-        public {GetHumpTableName(tablename)}Repository(MyDotNetCoreSugarClient context) : base(context)
+        public {GetHumpTableName(tablename)}Repository(ISqlSugarClient context) : base(context)
         {{ }}
 
       

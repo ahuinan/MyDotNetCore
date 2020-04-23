@@ -4,7 +4,7 @@ using SqlSugar;
 using System.Text;
 using MyDotNetCore.Project.Domain.Common;
 
-namespace MyDotNetCore.Project.Repositories.Common
+namespace MyDotNetCore.Project.Infrastructure.Repository
 {
     public class MyDotNetCoreSqlSugarClient: SqlSugarClient
     {

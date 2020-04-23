@@ -32,9 +32,6 @@ namespace MyDotNetCore.Project.Admin
         {
             services.AddControllersWithViews();
 
-            //注入数据库连接对象
-            services.AddScoped<MyDotNetCoreSqlSugarClient>();
-
             //Aop拦截处理
             services.ConfigureDynamicProxy(config => {
 
@@ -66,8 +63,6 @@ namespace MyDotNetCore.Project.Admin
                     pattern: "{controller=Home}/{action=Index}/{id?}");
             });
 
-            //初始化系统配置
-            Configuration.GetSection("SysConfig").Bind(new SysConfig());
 
 
         }

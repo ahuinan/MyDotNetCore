@@ -2,6 +2,7 @@
 using MyDotNetCore.Project.Domain.Repositories;
 using MyDotNetCore.Project.Infrastructure.Extensions;
 using MyDotNetCore.Project.Infrastructure.Helper;
+using MyDotNetCore.Project.Infrastructure.Repository;
 using Newtonsoft.Json;
 using SqlSugar;
 using System;
@@ -14,9 +15,9 @@ namespace MyDotNetCore.Project.Repositories.Common
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class, new()
     {
-        private MyDotNetCoreSqlSugarClient _context;
+        private ISqlSugarClient _context;
 
-        public Repository(MyDotNetCoreSqlSugarClient context)
+        public Repository(ISqlSugarClient context)
         {
             this._context = context;
 
@@ -29,14 +30,13 @@ namespace MyDotNetCore.Project.Repositories.Common
                 {
                     LogHelper.Info($"执行时间：{executeSecond}{Environment.NewLine}Sql:{sql}{Environment.NewLine}参数：{pars.ToJson()}");
                 }
-                else
+               
+                //只输出超过1秒的sql
+                if (executeSecond > 1)
                 {
-                    //只输出超过1秒的sql
-                    if (executeSecond > 1)
-                    {
-                        LogHelper.Info($"执行超过1秒：{executeSecond}{Environment.NewLine}Sql:{sql}{Environment.NewLine}参数：{JsonConvert.SerializeObject(pars)}");
-                    }
+                    LogHelper.Info($"执行超过1秒：{executeSecond}{Environment.NewLine}Sql:{sql}{Environment.NewLine}参数：{pars.ToJson()}");
                 }
+                
 
 
             };
