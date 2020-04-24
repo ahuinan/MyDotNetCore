@@ -6,9 +6,11 @@
 
   <ItemGroup>
     <ProjectReference Include="..\FrameWork\SqlSugar\SqlSugar.csproj" />
+    <ProjectReference Include="..\MyDotNetCore.Project.Infrastructure\MyDotNetCore.Project.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Common\" />
     <Folder Include="Message\Act\" />
     <Folder Include="Message\SearchRequest\" />
     <Folder Include="Message\ViewModel\" />

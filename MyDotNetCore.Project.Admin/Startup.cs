@@ -8,7 +8,6 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using MyDotNetCore.Project.Domain.Common;
 using AspectCore.Extensions.DependencyInjection;
 using AspectCore.Configuration;
 using MyDotNetCore.Project.Infrastructure.Aop;

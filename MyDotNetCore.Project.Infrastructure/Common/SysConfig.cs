@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace MyDotNetCore.Project.Domain.Common
+namespace MyDotNetCore.Project.Infrastructure.Common
 {
     public class SysConfig
     {

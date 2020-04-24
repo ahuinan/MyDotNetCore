@@ -1,8 +1,7 @@
-﻿using MyDotNetCore.Project.Domain.Common;
-using MyDotNetCore.Project.Domain.Repositories;
+﻿using MyDotNetCore.Project.Domain.Repositories;
+using MyDotNetCore.Project.Infrastructure.Common;
 using MyDotNetCore.Project.Infrastructure.Extensions;
 using MyDotNetCore.Project.Infrastructure.Helper;
-using MyDotNetCore.Project.Infrastructure.Repository;
 using Newtonsoft.Json;
 using SqlSugar;
 using System;

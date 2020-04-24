@@ -1,10 +1,8 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using MyDotNetCore.Project.Domain.Common;
 using MyDotNetCore.Project.GenerateCode.Template;
 using MyDotNetCore.Project.Infrastructure.Common;
 using MyDotNetCore.Project.Infrastructure.Helper;
-using MyDotNetCore.Project.Infrastructure.Repository;
 using MyDotNetCore.Project.Repositories.Common;
 using SqlSugar;
 using System;
@@ -14,11 +12,12 @@ namespace MyDotNetCore.Project.GenerateCode
 {
     class Program
     {
+
         static void Main(string[] args)
         {
             var serviceCollection = new ServiceCollection();
 
-            MyDotNetCoreFrameWork.Init(serviceCollection);
+            serviceCollection.InitMyDotNetCore();
 
             var serviceProvider = serviceCollection.BuildServiceProvider();
 

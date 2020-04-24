@@ -17,7 +17,6 @@
   <ItemGroup>
     <ProjectReference Include="..\FrameWork\AspectCore\AspectCore.Abstractions\AspectCore.Abstractions.csproj" />
     <ProjectReference Include="..\FrameWork\SqlSugar\SqlSugar.csproj" />
-    <ProjectReference Include="..\MyDotNetCore.Project.Domain\MyDotNetCore.Project.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

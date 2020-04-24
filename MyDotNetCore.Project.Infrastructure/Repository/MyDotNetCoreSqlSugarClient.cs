@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using SqlSugar;
 using System.Text;
-using MyDotNetCore.Project.Domain.Common;
+using MyDotNetCore.Project.Infrastructure.Common;
 
-namespace MyDotNetCore.Project.Infrastructure.Repository
+namespace MyDotNetCore.Project.Infrastructure.Repositories
 {
     public class MyDotNetCoreSqlSugarClient: SqlSugarClient
     {

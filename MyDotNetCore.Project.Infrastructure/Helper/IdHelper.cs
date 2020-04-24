@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Microsoft.Extensions.Configuration;
-using MyDotNetCore.Project.Domain.Common;
+using MyDotNetCore.Project.Infrastructure.Common;
 
 namespace MyDotNetCore.Project.Infrastructure.Helper
 {

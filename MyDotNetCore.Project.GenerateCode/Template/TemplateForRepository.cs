@@ -12,9 +12,9 @@ namespace MyDotNetCore.Project.GenerateCode.Template
 
         public TemplateForRepository(string tablename):base(tablename)
         {
-            base.SavePath = Path.Combine(FileHelper.GetSolutionPath(), "MyCode.Project.Repositories", $"{GetHumpTableName(tablename)}Repository.cs");
+            base.SavePath = Path.Combine(FileHelper.GetSolutionPath(), "MyDotNetCore.Project.Repositories", $"{GetHumpTableName(tablename)}Repository.cs");
 
-            base.TemplateContent = $@"using MyCode.Project.Repositories.Common;
+            base.TemplateContent = $@"using MyDotNetCore.Project.Repositories.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
