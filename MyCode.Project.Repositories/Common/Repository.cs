@@ -25,19 +25,16 @@ namespace MyDotNetCore.Project.Repositories.Common
             {
                 var executeSecond = this._context.Ado.SqlExecutionTime.TotalSeconds;
 
-                //是否输出Sql
-                if (SysConfig.IfOutputSql)
-                {
-                    LogHelper.Info($"执行时间：{executeSecond}{Environment.NewLine}Sql:{sql}{Environment.NewLine}参数：{pars.ToJson()}");
-                }
-               
-                //只输出超过1秒的sql
+                //只输出超过1秒的慢sql
                 if (executeSecond > 1)
                 {
                     LogHelper.Info($"执行超过1秒：{executeSecond}{Environment.NewLine}Sql:{sql}{Environment.NewLine}参数：{pars.ToJson()}");
                 }
-                
-
+                //是否输出Sql
+                else if (SysConfig.IfOutputSql)
+                {
+                    LogHelper.Info($"执行时间：{executeSecond}{Environment.NewLine}Sql:{sql}{Environment.NewLine}参数：{pars.ToJson()}");
+                }
 
             };
 

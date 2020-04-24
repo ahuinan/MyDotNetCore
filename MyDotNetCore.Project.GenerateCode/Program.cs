@@ -16,42 +16,49 @@ namespace MyDotNetCore.Project.GenerateCode
     {
         static void Main(string[] args)
         {
-            //System.IServiceProvider
-            IServiceCollection serviceCollection = new ServiceCollection();
+            var serviceCollection = new ServiceCollection();
 
             MyDotNetCoreFrameWork.Init(serviceCollection);
 
             var serviceProvider = serviceCollection.BuildServiceProvider();
 
-            var db = serviceProvider.GetService<ISqlSugarClient>();
-
-       
-            var tables = db.DbMaintenance.GetTableInfoList();
-
-            var solutionPath = FileHelper.GetSolutionPath();
-
-            Console.WriteLine($"当前解决方案所在目录：{solutionPath}");
-
-            //生成所有实体
-            db.DbFirst.IsCreateAttribute(true).CreateClassFile(Path.Combine(solutionPath, "MyDotNetCore.Project.Domain", "Model"), "MyDotNetCore.Project.Domain.Model");
-
-            foreach (var table in tables)
+            using (var db = serviceProvider.GetService<ISqlSugarClient>())
             {
 
-                Console.WriteLine(table.Name);
+                Console.WriteLine(db.GetHashCode());
 
-                //创建仓储接口
-                var templateForRepositoryInterface = new TemplateForRepositoryInterface(table.Name);
-                templateForRepositoryInterface.CreateFile();
+                var tables = db.DbMaintenance.GetTableInfoList();
 
-                //创建仓储实现类
-                var templateForRepository = new TemplateForRepository(table.Name);
-                templateForRepository.CreateFile();
+                var solutionPath = FileHelper.GetSolutionPath();
+
+                Console.WriteLine($"当前解决方案所在目录：{solutionPath}");
+
+                //生成所有实体
+                db.DbFirst.IsCreateAttribute(true).CreateClassFile(Path.Combine(solutionPath, "MyDotNetCore.Project.Domain", "Model"), "MyDotNetCore.Project.Domain.Model");
+
+                foreach (var table in tables)
+                {
+
+                    Console.WriteLine(table.Name);
+
+                    //创建仓储接口
+                    var templateForRepositoryInterface = new TemplateForRepositoryInterface(table.Name);
+
+                    templateForRepositoryInterface.CreateFile();
+
+                    //创建仓储实现类
+                    var templateForRepository = new TemplateForRepository(table.Name);
+
+                    templateForRepository.CreateFile();
+                }
+
+                Console.WriteLine("代码生成成功");
 
             }
-
-            Console.WriteLine("代码生成成功");
+            
             
         }
+
+
     }
 }
