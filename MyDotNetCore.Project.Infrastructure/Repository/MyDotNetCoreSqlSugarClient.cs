@@ -18,7 +18,7 @@ namespace MyDotNetCore.Project.Infrastructure.Repositories
             ConnectionString = SysConfig.ConnectionMasterStr,
             DbType = DbType.MySql,
             InitKeyType = InitKeyType.Attribute,
-            IsAutoCloseConnection = true
+            IsAutoCloseConnection = false
 
         };
     }

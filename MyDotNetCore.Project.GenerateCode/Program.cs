@@ -3,9 +3,11 @@ using Microsoft.Extensions.DependencyInjection;
 using MyDotNetCore.Project.GenerateCode.Template;
 using MyDotNetCore.Project.Infrastructure.Common;
 using MyDotNetCore.Project.Infrastructure.Helper;
+using MyDotNetCore.Project.Infrastructure.Repositories;
 using SqlSugar;
 using System;
 using System.IO;
+using System.Threading.Tasks;
 
 namespace MyDotNetCore.Project.GenerateCode
 {
@@ -20,8 +22,9 @@ namespace MyDotNetCore.Project.GenerateCode
 
             var serviceProvider = serviceCollection.BuildServiceProvider();
 
-            var db = serviceProvider.GetService<ISqlSugarClient>();
-            
+            using (var db = serviceProvider.GetService<ISqlSugarClient>())
+            {
+
                 var tables = db.DbMaintenance.GetTableInfoList();
 
                 var solutionPath = FileHelper.GetSolutionPath();
@@ -47,11 +50,12 @@ namespace MyDotNetCore.Project.GenerateCode
                     templateForRepository.CreateFile();
                 }
 
+            }
 
-                Console.WriteLine("代码生成成功");
 
-            Console.WriteLine(db.Ado.Connection.State);
-            
+            Console.WriteLine("代码生成成功");
+
+         
 
 
         }
