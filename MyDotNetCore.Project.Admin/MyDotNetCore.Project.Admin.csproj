@@ -17,7 +17,6 @@
   <ItemGroup>
     <ProjectReference Include="..\FrameWork\AspectCore\AspectCore.Extensions.DependencyInjection\AspectCore.Extensions.DependencyInjection.csproj" />
     <ProjectReference Include="..\FrameWork\AspectCore\AspectCore.Extensions.Hosting\AspectCore.Extensions.Hosting.csproj" />
-    <ProjectReference Include="..\MyCode.Project.Repositories\MyDotNetCore.Project.Repositories.csproj" />
     <ProjectReference Include="..\MyDotNetCore.Project.Domain\MyDotNetCore.Project.Domain.csproj" />
     <ProjectReference Include="..\MyDotNetCore.Project.Infrastructure\MyDotNetCore.Project.Infrastructure.csproj" />
   </ItemGroup>

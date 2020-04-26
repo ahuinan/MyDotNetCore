@@ -5,7 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MyCode.Project.Repositories\MyDotNetCore.Project.Repositories.csproj" />
     <ProjectReference Include="..\MyDotNetCore.Project.Domain\MyDotNetCore.Project.Domain.csproj" />
   </ItemGroup>
 

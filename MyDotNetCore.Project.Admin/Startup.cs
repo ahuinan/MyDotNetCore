@@ -11,7 +11,6 @@ using Microsoft.Extensions.Hosting;
 using AspectCore.Extensions.DependencyInjection;
 using AspectCore.Configuration;
 using MyDotNetCore.Project.Infrastructure.Aop;
-using MyDotNetCore.Project.Repositories.Common;
 
 namespace MyDotNetCore.Project.Admin
 {

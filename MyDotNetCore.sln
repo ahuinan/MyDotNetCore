@@ -10,8 +10,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Document", "Document", "{F8
 		README.md = README.md
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyDotNetCore.Project.Repositories", "MyCode.Project.Repositories\MyDotNetCore.Project.Repositories.csproj", "{FD40D262-CCC8-4358-8D9C-B67922A57BB2}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SqlSugar", "FrameWork\SqlSugar\SqlSugar.csproj", "{6D3C7DC8-C8D7-4525-9EA3-C90A31B343AD}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyDotNetCore.Project.Admin", "MyDotNetCore.Project.Admin\MyDotNetCore.Project.Admin.csproj", "{9B34E9C2-86D3-40BE-96C1-D203713F8188}"
@@ -36,7 +34,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspectCore.Extensions.Hosti
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyDotNetCore.Project.GenerateCode", "MyDotNetCore.Project.GenerateCode\MyDotNetCore.Project.GenerateCode.csproj", "{DAED6B59-CFBB-40B8-A26B-A4FB37540136}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyDotNetCore.Project.Services", "MyDotNetCore.Project.Services\MyDotNetCore.Project.Services.csproj", "{9A6069C3-1996-42A1-8104-FBFE5B6124D2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyDotNetCore.Project.Services", "MyDotNetCore.Project.Services\MyDotNetCore.Project.Services.csproj", "{9A6069C3-1996-42A1-8104-FBFE5B6124D2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyDotNetCore.Project.Repositories", "MyDotNetCore.Project.Repositories\MyDotNetCore.Project.Repositories.csproj", "{7244C173-0892-4C17-8DFA-61958C3B253F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,10 +44,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FD40D262-CCC8-4358-8D9C-B67922A57BB2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FD40D262-CCC8-4358-8D9C-B67922A57BB2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FD40D262-CCC8-4358-8D9C-B67922A57BB2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FD40D262-CCC8-4358-8D9C-B67922A57BB2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{6D3C7DC8-C8D7-4525-9EA3-C90A31B343AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{6D3C7DC8-C8D7-4525-9EA3-C90A31B343AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6D3C7DC8-C8D7-4525-9EA3-C90A31B343AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -100,6 +96,10 @@ Global
 		{9A6069C3-1996-42A1-8104-FBFE5B6124D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A6069C3-1996-42A1-8104-FBFE5B6124D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A6069C3-1996-42A1-8104-FBFE5B6124D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7244C173-0892-4C17-8DFA-61958C3B253F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7244C173-0892-4C17-8DFA-61958C3B253F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7244C173-0892-4C17-8DFA-61958C3B253F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7244C173-0892-4C17-8DFA-61958C3B253F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
