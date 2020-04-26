@@ -38,6 +38,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyDotNetCore.Project.Servic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyDotNetCore.Project.Repositories", "MyDotNetCore.Project.Repositories\MyDotNetCore.Project.Repositories.csproj", "{7244C173-0892-4C17-8DFA-61958C3B253F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyDotNetCore.Project.ScheduleTask", "MyDotNetCore.Project.ScheduleTask\MyDotNetCore.Project.ScheduleTask.csproj", "{DD387099-A0F3-4834-91ED-AE0A98F74A9F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -100,6 +102,10 @@ Global
 		{7244C173-0892-4C17-8DFA-61958C3B253F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7244C173-0892-4C17-8DFA-61958C3B253F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7244C173-0892-4C17-8DFA-61958C3B253F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD387099-A0F3-4834-91ED-AE0A98F74A9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD387099-A0F3-4834-91ED-AE0A98F74A9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD387099-A0F3-4834-91ED-AE0A98F74A9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD387099-A0F3-4834-91ED-AE0A98F74A9F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

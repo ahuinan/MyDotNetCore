@@ -327,5 +327,6 @@ return this.SelectListPage<LoginListResp>(strSql, where, request.Page, request.P
 - https://github.com/sunkaixuan/SqlSugar
 - http://jwt.io
 - https://github.com/dotnetcore/AspectCore-Framework
+- https://github.com/nizmow/Quartz.DependencyInjection.Microsoft
 
 
