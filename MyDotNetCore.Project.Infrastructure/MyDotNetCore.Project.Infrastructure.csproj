@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <Folder Include="Search\" />
+    <Folder Include="Ioc\" />
   </ItemGroup>
 
 </Project>
