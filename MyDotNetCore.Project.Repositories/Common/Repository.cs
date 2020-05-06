@@ -24,15 +24,14 @@ namespace MyDotNetCore.Project.Repositories.Common
             {
                 var executeSecond = this._context.Ado.SqlExecutionTime.TotalSeconds;
 
-                //只输出超过1秒的慢sql
+                if (SysConfig.IfOutputSql)
+                {
+                    LogHelper.Info($"Sql:{sql}{Environment.NewLine}参数：{pars.ToJson()}");
+                }
+
                 if (executeSecond > 1)
                 {
                     LogHelper.Info($"执行超过1秒：{executeSecond}{Environment.NewLine}Sql:{sql}{Environment.NewLine}参数：{pars.ToJson()}");
-                }
-                //是否输出Sql
-                else if (SysConfig.IfOutputSql)
-                {
-                    LogHelper.Info($"执行时间：{executeSecond}{Environment.NewLine}Sql:{sql}{Environment.NewLine}参数：{pars.ToJson()}");
                 }
 
             };
@@ -53,8 +52,6 @@ namespace MyDotNetCore.Project.Repositories.Common
             this._context.Ado.RollbackTran();
         }
         #endregion
-
-      
 
         #region ExecuteSqlCommand(执行命令)
         public int ExecuteSqlCommand(string sql, object parameters = null)
@@ -83,8 +80,6 @@ namespace MyDotNetCore.Project.Repositories.Common
         }
         #endregion
 
-  
-
         #region SelectList(用SQL返回多条记录)
         /// <summary>
         /// 例子 "select * from table where id=@id and name=@name",new {id=1,name="a"}
@@ -95,7 +90,6 @@ namespace MyDotNetCore.Project.Repositories.Common
         }
         #endregion
 
-     
         #region SelectList(列表)
         public List<TEntity> SelectList(Expression<Func<TEntity, bool>> whereExpression)
         {

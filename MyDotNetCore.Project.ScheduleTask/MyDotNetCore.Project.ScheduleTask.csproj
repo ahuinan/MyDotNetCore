@@ -14,4 +14,10 @@
     <ProjectReference Include="..\MyDotNetCore.Project.Infrastructure\MyDotNetCore.Project.Infrastructure.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="JobConfig.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

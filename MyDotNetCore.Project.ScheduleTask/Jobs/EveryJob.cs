@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace MyDotNetCore.Project.ScheduleTask.Jobs
 {
+    [DisallowConcurrentExecution]
     public class EveryJob:IJob
     {
         public EveryJob()

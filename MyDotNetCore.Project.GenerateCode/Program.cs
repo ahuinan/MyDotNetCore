@@ -24,7 +24,6 @@ namespace MyDotNetCore.Project.GenerateCode
 
             using (var db = serviceProvider.GetService<ISqlSugarClient>())
             {
-
                 var tables = db.DbMaintenance.GetTableInfoList();
 
                 var solutionPath = FileHelper.GetSolutionPath();

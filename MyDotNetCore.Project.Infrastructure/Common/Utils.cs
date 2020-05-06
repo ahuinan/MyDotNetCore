@@ -104,26 +104,6 @@ namespace MyDotNetCore.Project.Infrastructure.Common
         }
         #endregion
 
-        #region ConvertLongToDateTime(转long为时间)
-        // long --> DateTime
-        public static DateTime ConvertLongToDateTime(long d)
-        {
-            DateTime dtStart = TimeZone.CurrentTimeZone.ToLocalTime(new DateTime(1970, 1, 1));
-            long lTime = long.Parse(d + "0000000");
-            TimeSpan toNow = new TimeSpan(lTime);
-            return dtStart.Add(toNow);
-        }
-        #endregion
-
-        #region GetTimeStamp(得到Linux那边的时间戳)
-        public static int GetTimeStamp()
-        {
-            var startTime = TimeZone.CurrentTimeZone.ToLocalTime(new System.DateTime(1970, 1, 1));
-
-            return (int)(DateTime.Now - startTime).TotalSeconds;
-        }
-        #endregion
-
         #region 截取字符长度
         /// <summary>
         /// 截取字符长度
@@ -168,6 +148,29 @@ namespace MyDotNetCore.Project.Infrastructure.Common
             if (mybyte.Length > len)
                 tempString += "…";
             return tempString;
+        }
+        #endregion
+
+        #region GetTuoFengString(得到驼峰命名)
+        /// <summary>
+        /// 将下划线命名法转换成驼峰命名
+        /// </summary>
+        /// <param name="strItem"></param>
+        /// <returns></returns>
+        public string GetTuoFengString(string strItem)
+        {
+            string[] strItems = strItem.Split('_');
+            string strItemTarget = strItems[0];
+            for (int j = 1; j < strItems.Length; j++)
+            {
+                string temp = strItems[j].ToString();
+                string temp1 = temp[0].ToString().ToUpper();
+                string temp2 = "";
+                temp2 = temp1 + temp.Remove(0, 1);
+                strItemTarget += temp2;
+            }
+
+            return strItemTarget;
         }
         #endregion
     }
