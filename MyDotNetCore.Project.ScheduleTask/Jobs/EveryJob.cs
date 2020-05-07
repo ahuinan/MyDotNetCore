@@ -1,4 +1,5 @@
-﻿using Quartz;
+﻿using MyDotNetCore.Project.Infrastructure.Helper;
+using Quartz;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -17,8 +18,7 @@ namespace MyDotNetCore.Project.ScheduleTask.Jobs
 
         public Task Execute(IJobExecutionContext context)
         {
-            Console.WriteLine($"EveryJob:{DateTime.Now}");
-
+            throw new Exception("Error");
             return Task.CompletedTask;
         }
 

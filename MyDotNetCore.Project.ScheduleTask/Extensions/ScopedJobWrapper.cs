@@ -27,15 +27,15 @@ namespace MyDotNetCore.Project.ScheduleTask.Extensions
                 {
                     if (scope.ServiceProvider.GetService(this.job) is IJob currentJob)
                     {
+                        Console.WriteLine(DateTime.Now + " : Start to run the job - " + this.job.Name);
+
                         await currentJob.Execute(context);
                     }
                 }
-                catch (JobExecutionException)
-                {
-                    throw;
-                }
                 catch (Exception e)
                 {
+                    Console.WriteLine(e);
+
                     throw new JobExecutionException($"Failed to exexcute job '{context.JobDetail.Key}' of type '{context.JobDetail.JobType}", e);
                 }
             }
