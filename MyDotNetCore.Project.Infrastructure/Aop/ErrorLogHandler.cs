@@ -10,20 +10,19 @@ namespace MyDotNetCore.Project.Infrastructure.Aop
 {
     public class ErrorLogHandler: AbstractInterceptorAttribute
     {
+        private static string errMsg = $"{Environment.NewLine}----------------------------------------{Environment.NewLine}";
         public async override Task Invoke(AspectContext context, AspectDelegate next)
         {
+            var nameSpace = context.ServiceMethod.DeclaringType.Namespace;
+
             try
             {
                 await next(context);
             }
             catch (Exception ex)
             {
-                var sbErrorMsg = new StringBuilder();
-                sbErrorMsg.AppendLine($"传参:{context.Parameters.ToJson()}");
-                sbErrorMsg.AppendLine($"Source:{ex.Source}");
-                sbErrorMsg.AppendLine($"方法：{context.Implementation.ToString()},{context.ImplementationMethod.ToString()}");
-                sbErrorMsg.AppendLine(ex.ToString());
-                LogHelper.Error(sbErrorMsg.ToString());
+                LogHelper.Error(errMsg,ex);
+
                 throw ex;
             }
         }

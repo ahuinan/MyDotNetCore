@@ -1,5 +1,8 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using AspectCore.Configuration;
+using AspectCore.Extensions.DependencyInjection;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MyDotNetCore.Project.Infrastructure.Aop;
 using MyDotNetCore.Project.Infrastructure.Repositories;
 using SqlSugar;
 using System;
@@ -17,6 +20,7 @@ namespace MyDotNetCore.Project.Infrastructure.Common
             var builder = new ConfigurationBuilder()
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+
             configuration = builder.Build();
 
             //初始化系统配置
@@ -24,6 +28,14 @@ namespace MyDotNetCore.Project.Infrastructure.Common
 
             //注入数据对象
             service.AddScoped<ISqlSugarClient, MyDotNetCoreSqlSugarClient>();
+
+            //增加全局错误拦截
+            service.ConfigureDynamicProxy(config => {
+
+                config.Interceptors.AddTyped<ErrorLogHandler>(p => p.DeclaringType.FullName.EndsWith("Job"));
+
+                config.NonAspectPredicates.AddNamespace("MyDotNetCore.Project.Infrastructure");
+            });
         }
 
         public static string Get(string name)

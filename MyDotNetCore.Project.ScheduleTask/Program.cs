@@ -1,4 +1,7 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using AspectCore.Extensions.DependencyInjection;
+using AspectCore.Extensions.Hosting;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 using MyDotNetCore.Project.Infrastructure.Common;
 using MyDotNetCore.Project.ScheduleTask;
 using MyDotNetCore.Project.ScheduleTask.Extensions;
@@ -12,19 +15,25 @@ namespace MyDotNetCore.Project.Schedule
     {
         static async Task Main(string[] args)
         {
-            var serciceCollection = new ServiceCollection();
 
-            serciceCollection.InitMyDotNetCore();
+            var host = new HostBuilder().ConfigureServices((hostContext,services) => {
 
-            serciceCollection.AddQuartz();
+                services.AddQuartz();
 
-            var serivceProvider = serciceCollection.BuildServiceProvider();
+                services.InitMyDotNetCore();
 
-            var application = serivceProvider.GetRequiredService<Application>();
+            })
+            .UseServiceProviderFactory(new DynamicProxyServiceProviderFactory())
+            .Build();
+
+             var application = host.Services.GetRequiredService<Application>();
 
             await application.Start(AppDomain.CurrentDomain.BaseDirectory + "/JobConfig.xml");
 
-            Console.ReadKey();
+            host.Run();
+           
         }
+
+
     }
 }

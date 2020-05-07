@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Jobs>
-  <job name="EveryJob"  desc="定时执行的调度"  enabled="true"  type="MyDotNetCore.Project.ScheduleTask.Jobs.EveryJob,MyDotNetCore.Project.ScheduleTask"  CronExpression="*/2 * * * * ?" runonce="false" />
+  <job name="EveryJob"  desc="定时执行的调度"  enabled="true"  type="MyDotNetCore.Project.ScheduleTask.Jobs.EveryJob,MyDotNetCore.Project.ScheduleTask"  CronExpression="*/1 * * * * ?" runonce="true" />
 </Jobs>
 <!--
  <job name="EveryTimeJob"  desc="定时执行的调度"  enabled="true"  type="MyCode.Project.ScheduleTask.Jobs.EveryJob,MyCode.Project.ScheduleTask" CronExpression="0 */1 * * * ?" />

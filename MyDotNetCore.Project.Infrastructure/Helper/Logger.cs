@@ -68,5 +68,17 @@ namespace MyDotNetCore.Project.Infrastructure.Helper
             log.Error(message);
         }
         #endregion
+
+        #region Error(输出错误)
+        /// <summary>
+        /// 输出错误
+        /// </summary>
+        /// <param name="message"></param>
+        /// <param name="ex"></param>
+        public static void Error(string message, Exception ex)
+        {
+            log.Error(message,ex);
+        }
+        #endregion
     }
 }

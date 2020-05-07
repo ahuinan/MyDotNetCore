@@ -12,10 +12,14 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="5.0.0-preview.2.20160.3" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.3" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="3.1.0" />
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="3.1.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\FrameWork\AspectCore\AspectCore.Abstractions\AspectCore.Abstractions.csproj" />
+    <ProjectReference Include="..\FrameWork\AspectCore\AspectCore.Extensions.DependencyInjection\AspectCore.Extensions.DependencyInjection.csproj" />
+    <ProjectReference Include="..\FrameWork\AspectCore\AspectCore.Extensions.Hosting\AspectCore.Extensions.Hosting.csproj" />
     <ProjectReference Include="..\FrameWork\SqlSugar\SqlSugar.csproj" />
   </ItemGroup>
 

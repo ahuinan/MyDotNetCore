@@ -31,10 +31,10 @@ namespace MyDotNetCore.Project.Admin
             services.AddControllersWithViews();
 
             //AopÀ¹½Ø´¦Àí
-            services.ConfigureDynamicProxy(config => {
+            //services.ConfigureDynamicProxy(config => {
 
-                config.Interceptors.AddTyped<ErrorLogHandler>(Predicates.ForNameSpace("MyDotNetCore.*"));
-            });
+            //    config.Interceptors.AddTyped<ErrorLogHandler>(Predicates.ForNameSpace("MyDotNetCore.*"));
+            //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

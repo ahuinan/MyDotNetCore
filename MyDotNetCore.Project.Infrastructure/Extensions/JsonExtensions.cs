@@ -17,7 +17,9 @@ namespace MyDotNetCore.Project.Infrastructure.Extensions
         {
             if (obj == null) { return ""; }
 
-            return JsonConvert.SerializeObject(obj);
+            var str = JsonConvert.SerializeObject(obj);
+
+            return str;
         }
     }
 }
