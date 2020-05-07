@@ -18,22 +18,15 @@ namespace MyDotNetCore.Project.Schedule
 
             serciceCollection.AddQuartz();
 
-             serciceCollection.AddSingleton<JobHelper>();
+            serciceCollection.AddSingleton<Application>();
 
             serciceCollection.AddScoped<EveryJob>();
 
             var serivceProvider = serciceCollection.BuildServiceProvider();
 
+            var application = serivceProvider.GetService<Application>();
 
-
-            // serviceProvider.
-
-            //Application
-            var application = serivceProvider.GetService<JobHelper>();
-
-            await application.Execute();
-
-            //await application(AppDomain.CurrentDomain.BaseDirectory + "/JobConfig.xml");
+            await application.Start(AppDomain.CurrentDomain.BaseDirectory + "/JobConfig.xml");
 
             Console.ReadKey();
         }

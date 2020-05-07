@@ -27,79 +27,61 @@ namespace MyDotNetCore.Project.ScheduleTask
 		{
 			ConfigFile = _configPath;
 
-			List<jobinfo> list = new List<jobinfo>();
-			try
+			var list = new List<jobinfo>();
+
+			if (sched != null)
 			{
-				if (sched != null)
+				stop();
+				sched = null;
+			}
+			sched = await _schedulerFactory.GetScheduler();
+
+			XmlDocument document = new XmlDocument();
+
+			document.Load(ConfigFile);
+
+			XmlNode node = document.SelectSingleNode("Jobs");
+
+			if (node.ChildNodes.Count == 0) { Console.WriteLine("暂未有计划任务开启");return; }
+				
+			foreach (XmlNode node2 in node.ChildNodes)
+			{
+				jobinfo item = new jobinfo
 				{
-					stop();
-					sched = null;
-				}
-				//sched = new StdSchedulerFactory().GetScheduler();
-				//var service = 
+					name = node2.Attributes["name"].Value,
+					type = node2.Attributes["type"].Value,
+					CronExpression = node2.Attributes["CronExpression"].Value,
+					enabled = bool.Parse(node2.Attributes["enabled"].Value),
+					runonce = bool.Parse(node2.Attributes["runonce"].Value)
+				};
 
-				//sched = container.Resolve<IScheduler>();
-				sched = await _schedulerFactory.GetScheduler();
+				if (!item.enabled) { continue; }
+				
+				list.Add(item);
+				IJobDetail jobDetail = JobBuilder.Create(Type.GetType(item.type)).WithIdentity(item.name, item.name + "Group").Build();
+				ITrigger trigger = null;
 
-				XmlDocument document = new XmlDocument();
-
-				document.Load(ConfigFile);
-
-				XmlNode node = document.SelectSingleNode("Jobs");
-				if (node.ChildNodes.Count > 0)
+				if (!item.runonce)
 				{
-					foreach (XmlNode node2 in node.ChildNodes)
-					{
-						jobinfo item = new jobinfo
-						{
-							name = node2.Attributes["name"].Value,
-							type = node2.Attributes["type"].Value,
-							CronExpression = node2.Attributes["CronExpression"].Value,
-							enabled = bool.Parse(node2.Attributes["enabled"].Value),
-							runonce = bool.Parse(node2.Attributes["runonce"].Value)
-						};
-						if (item.enabled)
-						{
-							list.Add(item);
-							IJobDetail jobDetail = JobBuilder.Create(Type.GetType(item.type)).WithIdentity(item.name, item.name + "Group").Build();
-							ITrigger trigger = null;
-
-							if (!item.runonce)
-							{
-								trigger = TriggerBuilder.Create().WithIdentity(item.name, item.name + "Group").WithCronSchedule(item.CronExpression).Build();
-							}
-							else
-							{
-								trigger = TriggerBuilder.Create().WithIdentity(item.name, item.name + "Group").WithSimpleSchedule(x => x.WithIntervalInSeconds(1).WithRepeatCount(0)).Build();
-							}
-							await sched.ScheduleJob(jobDetail, trigger);
-						}
-					}
-					if (list.Count > 0)
-					{
-						await sched.Start();
-					}
-					else
-					{
-						Console.WriteLine("暂未有计划任务开启1");
-					}
+					trigger = TriggerBuilder.Create().WithIdentity(item.name, item.name + "Group").WithCronSchedule(item.CronExpression).Build();
 				}
 				else
 				{
-					Console.WriteLine("暂未有计划任务开启");
+					trigger = TriggerBuilder.Create().WithIdentity(item.name, item.name + "Group").WithSimpleSchedule(x => x.WithIntervalInSeconds(1).WithRepeatCount(0)).Build();
 				}
+				await sched.ScheduleJob(jobDetail, trigger);
+				
 			}
-			catch (Exception exception)
+			if (list.Count > 0)
 			{
-				Console.WriteLine(list.ToJson());
-
-				Console.WriteLine(exception);
-
-				LogHelper.Error(exception);
-
+				await sched.Start();
 			}
-
-			Console.ReadKey();
+			else
+			{
+				Console.WriteLine("暂未有计划任务开启1");
+			}
+		
+			
 		}
 
 
