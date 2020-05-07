@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace MyDotNetCore.Project.ScheduleTask.Jobs
 {
-    [DisallowConcurrentExecution]
+    /// <summary>
+    /// 禁止并发执行多个相同定义的JobDetail
+    /// </summary>
+    //[DisallowConcurrentExecution]
     public class EveryJob:IJob
     {
         public EveryJob()

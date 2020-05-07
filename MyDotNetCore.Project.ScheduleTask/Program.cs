@@ -18,13 +18,9 @@ namespace MyDotNetCore.Project.Schedule
 
             serciceCollection.AddQuartz();
 
-            serciceCollection.AddSingleton<Application>();
-
-            serciceCollection.AddScoped<EveryJob>();
-
             var serivceProvider = serciceCollection.BuildServiceProvider();
 
-            var application = serivceProvider.GetService<Application>();
+            var application = serivceProvider.GetRequiredService<Application>();
 
             await application.Start(AppDomain.CurrentDomain.BaseDirectory + "/JobConfig.xml");
 
